@@ -2,12 +2,17 @@
   "name": "watch-build-copy",
   "version": "1.0.0",
   "description": "script to watch a folder, run a build command and copy the result",
-  "main": "watch-build-copy.js",
+  "main": "./watch-build-copy.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["watch"],
-  "author": "Simon Seyock",
+  "bin": {
+    "watch-build-copy": "./watch-build-copy.js"
+  },
+  "keywords": [
+    "watch"
+  ],
+  "author": "Simon Seyock <seyock@terrestris.de>",
   "license": "MIT",
   "dependencies": {
     "chokidar": "^3.4.3",
