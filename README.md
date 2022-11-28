@@ -21,3 +21,10 @@ Options:
       --help     Show help                                             [boolean]
   -t, --timeout  the throttle timeout in ms for the build command[default: 1000]
 ```
+
+Example:
+
+Injects a modified version of [shogun-util](https://github.com/terrestris/shogun-util) into another project [shogun-gis-client](https://github.com/terrestris/shogun-gis-client).
+
+```sh
+watch-build-copy './src' 'npm run build' './dist/' '../shogun-gis-client/node_modules/@terrestris/shogun-util/dist/'
