@@ -21,3 +21,11 @@ Options:
       --help     Show help                                             [boolean]
   -t, --timeout  the throttle timeout in ms for the build command[default: 1000]
 ```
+
+Example:
+
+Importing the modified shogun-util into a project.
+
+```
+watch-build-copy './src' 'npm run build' './dist/' '../shogun-gis-client/node_modules/@terrestris/shogun-util/dist/'
+```
