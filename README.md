@@ -24,8 +24,7 @@ Options:
 
 Example:
 
-Importing the modified shogun-util into a project.
+Injects a modified version of [shogun-util](https://github.com/terrestris/shogun-util) into another project [shogun-gis-client](https://github.com/terrestris/shogun-gis-client).
 
-```
+```sh
 watch-build-copy './src' 'npm run build' './dist/' '../shogun-gis-client/node_modules/@terrestris/shogun-util/dist/'
-```
